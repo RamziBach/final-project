@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/modern-normalize.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/components/mobile-nav.css" />
+    <link rel="stylesheet" href="./styles/components/hero.css" />
+    <link rel="stylesheet" href="./styles/components/pricing.css" />
+    <link rel="stylesheet" href="./styles/components/about.css" />
+    <link rel="stylesheet" href="./styles/components/testimonial.css" />
+    <link rel="stylesheet" href="./styles/components/features.css" />
+    <link rel="stylesheet" href="./styles/components/faq.css" />
+    <link rel="stylesheet" href="./styles/components/cta.css" />
+    <link rel="stylesheet" href="./styles/components/footer.css" />
+    <link rel="stylesheet" href="./styles/utils.css" />
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <title>Final Project</title>
+    <script src="./src/main.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__title-container">
+        <img
+          src="./public/logo.png"
+          alt="Girl holding a cup of coffee"
+          width="720"
+          height="972"
+          class="header__logo"
+        />
+        <span class="header__title">Slaying The Dragon</span>
+      </div>
+      <button id="bars-btn" class="header__bars" aria-label="menu button">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+      <nav class="header__menu">
+        <div class="header__social-container">
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="header__social"
+            title="github"
+            aria-label="github link"
+            ><i aria-hidden="true" class="lni lni-github-original"></i
+          ></a>
+          <a
+            href="https://discord.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="header__social"
+            title="discord"
+            aria-label="discord link"
+            ><i aria-hidden="true" class="lni lni-discord-alt"></i
+          ></a>
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="header__social"
+            title="youtube"
+            aria-label="youtube link"
+            ><i aria-hidden="true" class="lni lni-youtube"></i
+          ></a>
+        </div>
+        <div class="header__separator"></div>
+        <a href="#" class="header__sign-in-btn">Sign in</a>
+        <a href="#" class="btn header__enter-app-btn"
+          >Enter App
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="header__enter-app-btn__arrow"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+    <!-- mobile nav -->
+    <div class="mobile-nav" id="mobile-nav">
+      <button class="mobile-nav__close-btn" id="close-btn">Close</button>
+      <img
+        src="./public/logo.png"
+        alt="Girl holding a cup of coffee"
+        width="720"
+        height="972"
+        class="mobile-nav__logo"
+      />
+      <div class="mobile-nav__social-container">
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="mobile-nav__social"
+          title="github"
+          aria-label="github link"
+          ><i aria-hidden="true" class="lni lni-github-original"></i
+        ></a>
+        <a
+          href="https://discord.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="mobile-nav__social"
+          title="discord"
+          aria-label="discord link"
+          ><i aria-hidden="true" class="lni lni-discord-alt"></i
+        ></a>
+        <a
+          href="https://youtube.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="mobile-nav__social"
+          title="youtube"
+          aria-label="youtube link"
+          ><i aria-hidden="true" class="lni lni-youtube"></i
+        ></a>
+      </div>
+      <div class="mobile-nav__separator"></div>
+      <a href="#" class="mobile-nav__sign-in-btn">Sign in</a>
+      <a href="#" class="btn mobile-nav__enter-app-btn"
+        >Enter App
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="mobile-nav__enter-app-btn__arrow"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <main>
+      <section class="hero container">
+        <img
+          class="hero__img"
+          src="./public/hero.png"
+          alt="guy sitting on a wheelchair"
+          width="1386"
+          height="1809"
+        />
+        <h1 class="hero__title">
+          Become the web developer <br class="hero__br" />
+          you were always destined to be.
+        </h1>
+        <p class="hero__description1">
+          Slaying the dragon is about facing your fears, pursuing meaning and
+          transforming into the web developer you were always destined to be.
+        </p>
+        <p class="hero__description2">
+          Here you will start your journey, it will not be easy - you will
+          suffer - but you will go all the way. Slaying The Dragon is a learning
+          platform for the bravest adventurer aspiring to defeat the biggest
+          dragon of all - web development.
+          <strong>I currently offer a CSS course</strong> and have plans to
+          release more courses soon, including
+          <strong>JavaScript - ReactJS - NextJS</strong> and more. You have
+          decided upon your purpose - <strong>you will slay the dragon.</strong>
+        </p>
+        <a href="#" class="hero__btn btn">Preview CSS course</a>
+      </section>
+      <section class="pricing container section">
+        <h2 class="title">Courses</h2>
+        <div class="pricing__box-container">
+          <div class="pricing__box pricing__box--0margin pricing__box--css">
+            <div>
+              <h3 class="pricing__title">CSS</h3>
+              <p class="pricing__description1">
+                The Complete Cascading Stylesheet course
+              </p>
+            </div>
+            <div>
+              <p class="pricing__description2">
+                CSS (Cascading Style Sheets) is a stylesheet language
+                responsible for the styling of your web page. It is used to
+                express how HTML elements are styled, positioned and rendered on
+                all of the different screen display and sizes.
+              </p>
+              <button class="btn pricing__btn">Buy now 50$</button>
+            </div>
+          </div>
+          <div class="pricing__box pricing__box--js">
+            <div>
+              <h3 class="pricing__title">JavaScript</h3>
+              <p class="pricing__description1">
+                The Complete JavaScript course
+              </p>
+            </div>
+            <div>
+              <p class="pricing__description2">
+                JS (JavaScript) is one of the most widely used programming
+                languages in the world. It allows us to add interactivity to our
+                web pages.
+              </p>
+              <button class="btn pricing__btn">Buy now 50$</button>
+            </div>
+          </div>
+          <div class="pricing__box pricing__box--react">
+            <div>
+              <h3 class="pricing__title">ReactJS</h3>
+              <p class="pricing__description1">The Complete ReactJS course</p>
+            </div>
+            <div>
+              <p class="pricing__description2">
+                ReactJS (A JavaScript library for building user interfaces) is
+                an open-source, declarative and component-based javascript
+                library. It the most popular Javascript front-end
+                library/framework and is widely used to build single page
+                application and user interfaces.
+              </p>
+              <button class="btn pricing__btn">Buy now 50$</button>
+            </div>
+          </div>
+          <div class="pricing__box pricing__box--next">
+            <div>
+              <h3 class="pricing__title">NextJS</h3>
+              <p class="pricing__description1">The Complete NextJS course</p>
+            </div>
+            <div>
+              <p class="pricing__description2">
+                NextJS (The React framework for production) is a React framework
+                with all the features you need for production - hybrid, static &
+                server rendering, TypeScript support, smart bundling, route
+                pre-fetching, and more. No config needed and great developer
+                experience.
+              </p>
+              <button class="btn pricing__btn">Buy now 50$</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about container section">
+        <h2 class="title">About</h2>
+        <div class="about__container">
+          <div class="about__item1">
+            <h2 class="about__title">Slaying The Dragon</h2>
+            <p class="about__description1">
+              I started my YouTube channel back in November of 2022 with little
+              to no expectations and within only a few weeks I was overwhelmed
+              by the love and support I got from new viewers and subscribers. I
+              am infinitely grateful to each and everyone one of you - I am
+              absolutely honored by this community.
+            </p>
+            <p class="about__description2">
+              Your support and encouragement has been instrumental in helping me
+              to grow as a content creator and to keep pushing myself to create
+              better and more engaging videos. Whether you've been with me from
+              the beginning or just recently discovered my channel, please know
+              that I appreciate you and I am committed to continuing to provide
+              you with high-quality content that you will enjoy. Thank you again
+              for your support, and I can't wait to see what the future holds
+              for our community!
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="about__btn btn"
+              >Join the discord
+              <i
+                aria-hidden="true"
+                class="lni lni-discord-alt about__btn-discord"
+              ></i
+            ></a>
+          </div>
+          <div class="about__item2">
+            <div>
+              <h3 class="about__label">Channel total subscribers</h3>
+              <p class="about__stat">
+                88,000<span class="about__stat-span">+ subs</span>
+              </p>
+            </div>
+            <div>
+              <h3 class="about__label">Channel total views</h3>
+              <p class="about__stat">
+                3,000,000<span class="about__stat-span">+ views</span>
+              </p>
+            </div>
+            <div>
+              <h3 class="about__label">Channel total ammount watch hours</h3>
+              <p class="about__stat">
+                170,000<span class="about__stat-span">+ watch hours</span>
+              </p>
+            </div>
+            <div>
+              <h3 class="about__label">Channel total videos uploaded</h3>
+              <p class="about__stat">
+                13<span class="about__stat-span">+ videos uploaded</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial container section">
+        <h2 class="title">Love & Support</h2>
+        <h2 class="testimonial__title">Testimonials</h2>
+        <p class="testimonial__description">
+          Voluptate sint esse enim duis irure nisi. Proident mollit occaecat
+          minim dolor sunt ullamco duis consectetur minim commodo dolor qui.
+        </p>
+        <div class="testimonial__container">
+          <div class="testimonial__box testimonial__box--0margin">
+            <p class="testimonial__comment">
+              Fugiat eu veniam laboris commodo id aute eu mollit dolor aute
+              culpa reprehenderit occaecat cillum.
+            </p>
+            <p class="testimonial__name">@John Doe</p>
+          </div>
+          <div class="testimonial__box">
+            <p class="testimonial__comment">
+              In dolore anim qui adipisicing culpa consequat mollit excepteur.
+            </p>
+            <p class="testimonial__name">@John Doe</p>
+          </div>
+          <div class="testimonial__box">
+            <p class="testimonial__comment">
+              Minim dolor proident adipisicing deserunt tempor culpa proident.
+            </p>
+            <p class="testimonial__name">@John Doe</p>
+          </div>
+          <div class="testimonial__box">
+            <p class="testimonial__comment">
+              Velit occaecat nisi ipsum cupidatat labore ut sunt ea magna.
+            </p>
+            <p class="testimonial__name">@John Doe</p>
+          </div>
+          <div class="testimonial__box">
+            <p class="testimonial__comment">
+              Culpa mollit tempor irure occaecat velit labore nostrud voluptate
+              sit quis exercitation ipsum tempor duis.
+            </p>
+            <p class="testimonial__name">@John Doe</p>
+          </div>
+          <div class="testimonial__box">
+            <p class="testimonial__comment">
+              Consectetur deserunt dolore adipisicing culpa dolor occaecat
+              mollit adipisicing fugiat.
+            </p>
+            <p class="testimonial__name">@John Doe</p>
+          </div>
+        </div>
+      </section>
+      <section class="features container section">
+        <h2 class="title">Features</h2>
+        <div class="features__container">
+          <div class="features__content">
+            <h2 class="features__title">A better way to learn</h2>
+            <p class="features__description">
+              Tempor aliquip quis commodo eu adipisicing qui elit enim. Esse
+              excepteur deserunt consectetur non eu veniam mollit occaecat duis
+              sit consectetur dolore. Eu sint deserunt laborum id. Non est
+              mollit tempor Lorem sint.
+            </p>
+          </div>
+          <div class="features__grid">
+            <div class="features__box features__box--0margin">
+              <div class="features__box-icon-container">
+                <svg
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="features__box-icon"
+                >
+                  <path
+                    d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"
+                  />
+                  <path
+                    d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"
+                  />
+                  <path
+                    d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__box-title">Lorem Ipsum</h3>
+              <p class="features__box-description">
+                Officia id esse elit duis irure deserunt id velit non pariatur.
+                Duis nisi culpa eu eiusmod nisi dolor cillum deserunt quis
+                commodo nulla ipsum ullamco id.
+              </p>
+            </div>
+            <div class="features__box">
+              <div class="features__box-icon-container">
+                <svg
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="features__box-icon"
+                >
+                  <path
+                    d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"
+                  />
+                  <path
+                    d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"
+                  />
+                  <path
+                    d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__box-title">Lorem Ipsum</h3>
+              <p class="features__box-description">
+                Officia id esse elit duis irure deserunt id velit non pariatur.
+                Duis nisi culpa eu eiusmod nisi dolor cillum deserunt quis
+                commodo nulla ipsum ullamco id.
+              </p>
+            </div>
+            <div class="features__box">
+              <div class="features__box-icon-container">
+                <svg
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="features__box-icon"
+                >
+                  <path
+                    d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"
+                  />
+                  <path
+                    d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"
+                  />
+                  <path
+                    d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__box-title">Lorem Ipsum</h3>
+              <p class="features__box-description">
+                Officia id esse elit duis irure deserunt id velit non pariatur.
+                Duis nisi culpa eu eiusmod nisi dolor cillum deserunt quis
+                commodo nulla ipsum ullamco id.
+              </p>
+            </div>
+            <div class="features__box">
+              <div class="features__box-icon-container">
+                <svg
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="features__box-icon"
+                >
+                  <path
+                    d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"
+                  />
+                  <path
+                    d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"
+                  />
+                  <path
+                    d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__box-title">Lorem Ipsum</h3>
+              <p class="features__box-description">
+                Officia id esse elit duis irure deserunt id velit non pariatur.
+                Duis nisi culpa eu eiusmod nisi dolor cillum deserunt quis
+                commodo nulla ipsum ullamco id.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq container section">
+        <h2 class="title">FAQ</h2>
+        <h2 class="faq__title">Frequently asked questions</h2>
+        <p class="faq__description">
+          Reprehenderit sint velit adipisicing do duis veniam laborum commodo
+          et. Duis excepteur deserunt elit do exercitation adipisicing esse
+          laboris elit aliquip excepteur.
+        </p>
+        <div class="faq__container">
+          <div class="faq__box faq__box--0margin">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Adipisicing sunt dolor non in pariatur aute reprehenderit anim
+              laboris. Qui voluptate eu minim laboris nostrud aliquip
+              consectetur esse dolor.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Consequat elit irure nulla adipisicing nulla fugiat ipsum enim ea.
+              Sint consectetur incididunt fugiat do consectetur.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Ullamco labore aliquip qui reprehenderit nisi proident esse in
+              officia. Consequat aute officia dolor pariatur elit.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Ea cillum ex ullamco sit et ad magna ipsum. Ut quis aliqua
+              consequat reprehenderit culpa quis deserunt ullamco cupidatat
+              nulla culpa.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Et eiusmod enim ut excepteur commodo dolore consequat ipsum. Magna
+              voluptate dolor occaecat proident.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Dolor labore deserunt pariatur voluptate eu amet aliquip ex
+              excepteur ad et est. Id cillum esse ex do tempor incididunt magna.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Irure esse proident culpa aliqua duis laborum cillum sint sunt
+              aliqua nisi. Incididunt voluptate amet amet duis laboris elit in
+              eu exercitation aute sit voluptate incididunt.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Incididunt aute ullamco sint qui anim nisi velit deserunt
+              cupidatat. Ad pariatur labore incididunt cillum magna deserunt
+              incididunt velit et elit reprehenderit excepteur excepteur.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-title">Lorem Ipsum</h3>
+            <p class="faq__box-description">
+              Nostrud laboris do adipisicing excepteur tempor consequat aliqua
+              fugiat occaecat. Veniam officia laborum enim minim aute non magna
+              consequat sit exercitation.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="cta container section">
+        <img
+          src="./public/cta.png"
+          alt="Guy leaning down"
+          width="1020"
+          height="1407"
+          class="cta__img"
+        />
+        <h2 class="cta__title">You have decided upon your purpose.</h2>
+        <p class="cta__description">
+          Slay the dragon - get the treasure, that's how it works. But first you
+          must prepare. Start learning and become an expert front-end,
+          full-stack jamstack web developer.
+        </p>
+        <a href="#" class="cta__btn btn"
+          >Enter App
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="cta__arrow"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </section>
+    </main>
+    <footer class="container section">
+      <p class="footer__description">~ Slaying The Dragon ~~~~~~~~~~</p>
+    </footer>
+  </body>
+</html>

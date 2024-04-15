@@ -1,0 +1,154 @@
+.about__item1 {
+  margin-bottom: 2rem;
+}
+
+.about__item1 > * + * {
+  margin-top: 1rem;
+}
+
+.about__title {
+  font-size: var(--size-2xl);
+  line-height: 1;
+}
+
+.about__description1 {
+  font-size: var(--size-sm);
+  color: var(--clr-muted);
+  font-family: var(--font-secondary);
+}
+
+.about__description2 {
+  font-size: var(--size-sm);
+}
+
+.about__btn {
+  font-size: var(--size-sm);
+}
+
+.about__btn-discord {
+  margin-left: 0.25rem;
+  vertical-align: middle;
+}
+
+.about__item2 > * + * {
+  margin-top: 2rem;
+}
+
+.about__label {
+  color: var(--clr-text);
+  font-family: var(--font-secondary);
+  font-size: var(--size-xs);
+  font-weight: 400;
+}
+
+.about__stat {
+  font-size: var(--size-3xl);
+  color: var(--clr-light);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.about__stat-span {
+  color: var(--clr-muted);
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .about__title {
+    font-size: var(--size-3xl);
+  }
+
+  .about__description1 {
+    font-size: var(--size-base);
+  }
+
+  .about__description2 {
+    font-size: var(--size-base);
+  }
+
+  .about__btn {
+    font-size: var(--size-base);
+  }
+
+  .about__label {
+    font-size: var(--size-sm);
+  }
+
+  .about__stat {
+    font-size: var(--size-4xl);
+  }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+  .about__description1 {
+    max-width: 60ch;
+  }
+
+  .about__description2 {
+    max-width: 60ch;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .about__item1 {
+    margin-bottom: 0;
+  }
+
+  .about__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about__title {
+    font-size: var(--size-4xl);
+  }
+
+  .about__description1 {
+    font-size: var(--size-lg);
+  }
+
+  .about__description2 {
+    font-size: var(--size-lg);
+  }
+
+  .about__btn {
+    font-size: var(--size-lg);
+  }
+
+  .about__label {
+    font-size: var(--size-base);
+    text-align: end;
+  }
+
+  .about__stat {
+    font-size: var(--size-5xl);
+    text-align: end;
+  }
+
+  .about__item1 > * + * {
+    margin-top: 2rem;
+  }
+
+  .about__item2 > * + * {
+    margin-top: 3rem;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .about__description1 {
+    max-width: 70ch;
+  }
+
+  .about__description2 {
+    max-width: 70ch;
+  }
+}

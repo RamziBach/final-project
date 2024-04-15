@@ -1,0 +1,140 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.header__logo {
+  width: var(--size-7xl);
+  height: var(--size-7xl);
+  object-fit: cover;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.header__bars {
+  width: var(--size-2xl);
+  height: var(--size-2xl);
+  color: var(--clr-slate50);
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__title {
+  display: none;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+  .header__bars {
+    display: none;
+  }
+
+  .header__menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .header__social {
+    text-decoration: none;
+    font-size: var(--size-lg);
+    color: var(--clr-slate50);
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    line-height: 0;
+  }
+
+  .header__social:hover {
+    background-color: var(--clr-slate800);
+  }
+
+  .header__separator {
+    border: 1px solid var(--clr-slate800);
+    padding-top: 1.5rem;
+  }
+
+  .header__sign-in-btn {
+    font-family: var(--font-secondary);
+    font-size: var(--size-xs);
+    color: var(--clr-text);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+  }
+
+  .header__sign-in-btn:hover {
+    color: var(--clr-slate300);
+  }
+
+  .header__enter-app-btn {
+    font-size: var(--size-xs);
+  }
+
+  .header__enter-app-btn__arrow {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+    width: 1em;
+  }
+
+  .header__social-container {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .header__title-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .header__title {
+    display: block;
+    font-family: var(--font-secondary);
+    font-size: var(--size-xl);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .header__logo {
+    width: var(--size-8xl);
+    height: var(--size-8xl);
+  }
+
+  .header__title {
+    font-size: var(--size-2xl);
+  }
+
+  .header__social {
+    font-size: var(--size-xl);
+  }
+
+  .header__sign-in-btn {
+    font-size: var(--size-sm);
+  }
+
+  .header__enter-app-btn {
+    font-size: var(--size-sm);
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
